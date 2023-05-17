@@ -74,7 +74,7 @@ La base de datos usada es **MySQL**, el directorio **datos_DB** contiene la info
 * Clonar o descargar el repositorio.
 
   ```bash
-  git clone https://github.com/kurotom/Simulacion_check-in_Aerolinea.git
+  git clone https://github.com/kurotom/API_check-in_aerolinea.git
   ```
 
 * Iniciar entorno virtual.
