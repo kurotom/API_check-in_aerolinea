@@ -1,0 +1,5 @@
+flight_id, takeoff_date_time, takeoff_airport, landing_date_time, landing_airport, airplane_id
+1, 1688207580, 'Aeropuerto Internacional Arturo Merino Benitez, Chile', 1688221980, 'Aeropuerto Internacional Jorge Cháve, Perú', 1
+2, 1688491980, 'Aeropuerto Internacional Jorge Cháve, Perú', 1688495580, 'Aeropuerto Francisco Carlé, Perú', 2
+3, 1688766182, 'Aeropuerto El Tepual, Chile', 1688772962, 'Aeropuerto Internacional Arturo Merino Benitez, Chile', 2
+4, 1689786902, 'Aeropuerto Internacional Arturo Merino Benitez, Chile', 1689819302, 'Aeropuerto Internacional de la Ciudad de México, México', 1
