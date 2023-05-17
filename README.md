@@ -14,7 +14,7 @@ La base de datos consta del siguiente esquema.
 
 Una vez realizada la operación de establecimiento de asientos, se retorna una respuesta con los datos actualizados de cada pasajero.
 
-El directorio **datos_DB** contiene la información usada para este proyecto.
+La base de datos usada es **MySQL**, el directorio **datos_DB** contiene la información usada para este proyecto.
 
 
 ## Consideraciones
