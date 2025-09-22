@@ -128,21 +128,23 @@ Esta ruta muestra una documentación interactiva de la API.
 
 ## Al recibir una petición correcta
 
-1. Busca si existe o no el id del vuelo consultado, prepara los datos (serializa). Busca los ticket de vuelo por su *vueloId* y se separan por el tipo de asiento, premium, premium económico y económico.
+1. Busca si existe o no el id del vuelo consultado, prepara los datos (serializa).
+
+   Busca los ticket de vuelo por su *vueloId* y se separan por el tipo de asiento, premium, premium económico y económico.
 
 2. Obtiene los datos de todos los pasajeros por su id entregado en el ticket, realizado por la función `dataPassenger`.
 
 3. Luego se procede con la ubicación de los pasajeros en los asientos del avión, realizado principalmente por la función `establecerAsientos`, en general, esta función separa los pasajeros en grupos por su id de compra de ticket, los pasajeros del mismo grupo se ordenan dependiendo dejando primero los que si tienen asignado un asiento.
 
-  Estos grupos de pasajeros son los primeros en asignarles asientos.
+   Estos grupos de pasajeros son los primeros en asignarles asientos.
 
-  Los grupos de pasajeros que no tienen asientos se separan del resto, y son tratados aparte.
+   Los grupos de pasajeros que no tienen asientos se separan del resto, y son tratados aparte.
 
 4. Los grupos sin asientos, se ordenan de mayor a menor según la cantidad de pasajeros del grupo.
 
-  Se consulta por los asientos restantes disponibles y se comprueba que los integrantes de cada grupo se establezcan en la misma fila sin exceder el límite de cada columna de asientos.
+   Se consulta por los asientos restantes disponibles y se comprueba que los integrantes de cada grupo se establezcan en la misma fila sin exceder el límite de cada columna de asientos.
 
-  A cada pasajero asignado a una posición, se consulta por la identificación del asiento y esta ID se asigna a los datos del pasajero.
+   A cada pasajero asignado a una posición, se consulta por la identificación del asiento y esta ID se asigna a los datos del pasajero.
 
 5. Una vez, asignados todos los pasajeros, se prepara la respuesta de la API, esta se ajusta al formato requerido y los datos son enviados al cliente.
 
